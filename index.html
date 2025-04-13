@@ -2,120 +2,76 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thuê xe du lịch Đà Lạt | Đà Lạt Travel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đà Lạt Travel - Thuê Xe Du Lịch</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #007b5e, #f7c600);
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-      margin-bottom: 10px;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .tour-box {
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 30px;
-      background-color: #f9f9f9;
-    }
-    .tour-box img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #333; }
+    header { background: linear-gradient(to right, #007b5e, #f7c600); color: #fff; padding: 20px; text-align: center; }
+    .section { padding: 30px 20px; max-width: 900px; margin: auto; }
+    .tour-box { margin-bottom: 30px; background: #f9f9f9; border-radius: 12px; padding: 20px; }
+    .tour-box img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
     form input, form select, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      width: 100%; padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc;
     }
     form button {
-      background-color: #f7c600;
-      color: #000;
-      padding: 12px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
+      background: #f7c600; color: #000; padding: 12px 20px; font-size: 16px; border: none; border-radius: 6px; cursor: pointer;
     }
-    form button:hover {
-      background-color: #e6b800;
-    }
-    footer {
-      text-align: center;
-      background: #f0f0f0;
-      padding: 20px;
-    }
+    footer { background: #eee; padding: 20px; text-align: center; font-size: 14px; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-dalat-travel.png" alt="Đà Lạt Travel Logo" />
-    <h1>ĐÀ LẠT TRAVEL</h1>
-    <p>Thuê Xe Du Lịch Đà Lạt 4 & 7 Chỗ Có Tài Xế</p>
-  </header>
 
-  <section class="section">
-    <h2>Tour Nội Thành</h2>
-    <div class="tour-box">
-      <img src="tour-cun.jpg" alt="Tour Nông trại cún">
-      <img src="tour-freshgarden.jpg" alt="Tour Fresh Garden">
-      <h3>Giá chỉ từ: 1.000.000đ/xe</h3>
-    </div>
+<header>
+  <h1>ĐÀ LẠT TRAVEL</h1>
+  <p>Thuê Xe Du Lịch Đà Lạt 4 & 7 Chỗ Có Tài Xế</p>
+</header>
 
-    <h2>Tour Ngoại Thành</h2>
-    <div class="tour-box">
-      <img src="tour-caudat.jpg" alt="Tour Đồi chè Cầu Đất">
-      <img src="tour-tonghop.jpg" alt="Tổng hợp tour ngoại thành">
-      <h3>Giá chỉ từ: 1.300.000đ/xe</h3>
-    </div>
-  </section>
+<section class="section">
+  <h2>Tour Nội Thành</h2>
+  <div class="tour-box">
+    <img src="tour-cun.jpg" alt="Tour nông trại cún">
+    <img src="tour-freshgarden.jpg" alt="Tour Fresh Garden">
+    <p><strong>Giá: 1.000.000đ/xe</strong></p>
+  </div>
 
-  <section class="section">
-    <h2>Đặt xe ngay</h2>
-    <form>
-      <label>Họ tên:</label>
-      <input type="text" name="name" required>
-      
-      <label>Số điện thoại:</label>
-      <input type="tel" name="phone" required>
+  <h2>Tour Ngoại Thành</h2>
+  <div class="tour-box">
+    <img src="tour-caudat.jpg" alt="Tour đồi chè Cầu Đất">
+    <img src="tour-tonghop.jpg" alt="Tour tổng hợp ngoại thành">
+    <p><strong>Giá: 1.300.000đ/xe</strong></p>
+  </div>
+</section>
 
-      <label>Ngày đi:</label>
-      <input type="date" name="date" required>
+<section class="section">
+  <h2>Đặt Xe Ngay</h2>
+  <form>
+    <label>Họ tên:</label>
+    <input type="text" name="name" required>
 
-      <label>Chọn tour:</label>
-      <select name="tour">
-        <option value="noi-thanh">Tour nội thành</option>
-        <option value="ngoai-thanh">Tour ngoại thành</option>
-      </select>
+    <label>Số điện thoại:</label>
+    <input type="tel" name="phone" required>
 
-      <label>Ghi chú:</label>
-      <textarea name="note" rows="4"></textarea>
+    <label>Ngày đi:</label>
+    <input type="date" name="date" required>
 
-      <button type="submit">Gửi yêu cầu tư vấn</button>
-    </form>
-  </section>
+    <label>Chọn tour:</label>
+    <select name="tour">
+      <option value="noi-thanh">Tour nội thành</option>
+      <option value="ngoai-thanh">Tour ngoại thành</option>
+    </select>
 
-  <footer>
-    <p><strong>Đà Lạt Travel</strong> - Hotline/Zalo: 0989 7878 42 – 0987 7272 63</p>
-    <p>Chúng tôi cam kết dịch vụ uy tín - nhanh chóng - giá hợp lý.</p>
-  </footer>
+    <label>Ghi chú:</label>
+    <textarea name="note" rows="4"></textarea>
+
+    <button type="submit">Gửi yêu cầu tư vấn</button>
+  </form>
+</section>
+
+<footer>
+  <p><strong>Hotline/Zalo:</strong> 0989 7878 42 – 0987 7272 63</p>
+  <p>© 2024 Đà Lạt Travel. Dịch vụ uy tín – nhanh chóng – giá hợp lý.</p>
+</footer>
+
 </body>
 </html>
