@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -15,23 +14,32 @@
     header {
       background: linear-gradient(to right, #007b5e, #f7c600);
       color: white;
-      padding: 10px 20px;
+      padding: 20px;
       text-align: center;
-    }
-    header img {
-      max-height: 80px;
-      margin-bottom: 10px;
     }
     .section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
+    .cta {
+      background-color: #007b5e;
+      color: white;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .cta:hover {
+      background-color: #005f46;
+    }
     .tour-box {
       border: 1px solid #ccc;
       border-radius: 12px;
       padding: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       background-color: #f9f9f9;
     }
     .tour-box img {
@@ -58,16 +66,10 @@
     form button:hover {
       background-color: #e6b800;
     }
-    footer {
-      text-align: center;
-      background: #f0f0f0;
-      padding: 20px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/QP8UnDY.png" alt="Đà Lạt Travel Logo" />
     <h1>ĐÀ LẠT TRAVEL</h1>
     <p>Thuê Xe Du Lịch Đà Lạt 4 & 7 Chỗ Có Tài Xế</p>
   </header>
@@ -79,16 +81,14 @@
 
   <section class="section">
     <div class="tour-box">
-      <img src="https://dulichdalat.pro/wp-content/uploads/2023/04/tour-noi-thanh-da-lat-1.jpg" alt="Tour nội thành Đà Lạt">
-      <img src="https://dalattravel.vn/wp-content/uploads/2020/06/tour-da-lat-1-ngay-1.jpg" alt="Tour nội thành Đà Lạt 2">
+      <img src="https://example.com/noi-thanh.jpg" alt="Tour nội thành Đà Lạt">
       <h3>Tour Nội Thành Đà Lạt - 1 ngày</h3>
       <p>Khám phá những điểm đến nổi bật trong thành phố: Quảng Trường, Dinh Bảo Đại, Ga Đà Lạt, Nhà thờ Con Gà...</p>
       <p><strong>Giá chỉ từ: 1.000.000đ/xe</strong></p>
     </div>
 
     <div class="tour-box">
-      <img src="https://statics.vinpearl.com/du-lich-ngoai-thanh-da-lat-1_1653036999.jpg" alt="Tour ngoại thành Đà Lạt">
-      <img src="https://dalatpalace.vn/wp-content/uploads/2022/10/du-lich-ngoai-thanh-da-lat.jpg" alt="Tour ngoại thành Đà Lạt 2">
+      <img src="https://example.com/ngoai-thanh.jpg" alt="Tour ngoại thành Đà Lạt">
       <h3>Tour Ngoại Thành Đà Lạt - 1 ngày</h3>
       <p>Trải nghiệm thiên nhiên và nông trại: Thác Voi, Làng Cù Lần, Fresh Garden, Đồi chè Cầu Đất...</p>
       <p><strong>Giá chỉ từ: 1.300.000đ/xe</strong></p>
@@ -120,8 +120,8 @@
     </form>
   </section>
 
-  <footer>
-    <p><strong>Đà Lạt Travel</strong> - Hotline/Zalo: 0989 7878 42 – 0987 7272 63</p>
+  <footer class="section" style="text-align:center; background:#f0f0f0;">
+    <p><strong>Đà Lạt Travel</strong> - Hotline: 090x.xxx.xxx | Zalo | Fanpage</p>
     <p>Chúng tôi cam kết dịch vụ uy tín - nhanh chóng - giá hợp lý.</p>
   </footer>
 </body>
